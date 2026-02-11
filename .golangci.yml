@@ -1,0 +1,27 @@
+version: "2"
+
+linters:
+  enable:
+    - errcheck
+    - errname
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - revive
+    - unconvert
+    - unparam
+    - gocritic
+    - dupl
+
+  settings:
+    gocritic:
+      enabled-tags:
+        - diagnostic
+        - style
+        - performance
+
+formatters:
+  enable:
+    - gofmt
+    - goimports
