@@ -2,7 +2,7 @@ package storage
 
 import "time"
 
-type Log struct {
+type Journal struct {
 	ID                  int
 	Name                string
 	CurrentMileage      int
@@ -11,9 +11,9 @@ type Log struct {
 
 type Record struct {
 	ID          int
-	LogID       int
+	JournalID   int
 	Name        string
-	Article     string
+	SKU         string
 	ReplacedAt  time.Time
 	NextDate    *time.Time
 	Mileage     int
