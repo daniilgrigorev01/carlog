@@ -11,6 +11,6 @@ type Storage interface {
 	AddRecord(record Record) (Record, error)
 	GetRecordByID(id int) (Record, error)
 	GetAllRecordsByJournalID(journalID int) ([]Record, error)
-	UpdateRecord(record Record) (Record, error)
+	UpdateRecord(id int, params UpdateRecordParams) (Record, error)
 	DeleteRecord(id int) error
 }

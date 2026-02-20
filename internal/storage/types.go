@@ -19,3 +19,10 @@ type Record struct {
 	Mileage     int
 	NextMileage *int
 }
+
+type UpdateRecordParams struct {
+	Name       *string
+	SKU        *string
+	ReplacedAt *time.Time
+	Mileage    *int
+}
