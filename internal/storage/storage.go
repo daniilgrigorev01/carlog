@@ -7,4 +7,10 @@ type Storage interface {
 	UpdateJournalName(id int, name string) (Journal, error)
 	UpdateJournalMileage(id int, mileage int) (Journal, error)
 	DeleteJournal(id int) error
+
+	AddRecord(record Record) (Record, error)
+	GetRecordByID(id int) (Record, error)
+	GetAllRecordsByJournalID(journalID int) ([]Record, error)
+	UpdateRecord(record Record) (Record, error)
+	DeleteRecord(id int) error
 }
