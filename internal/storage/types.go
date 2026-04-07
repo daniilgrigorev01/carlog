@@ -18,6 +18,7 @@ type Record struct {
 	NextDate    *time.Time
 	Mileage     int
 	NextMileage *int
+	CreatedAt   time.Time
 }
 
 type UpdateRecordParams struct {
