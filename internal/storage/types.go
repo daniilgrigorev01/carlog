@@ -22,8 +22,10 @@ type Record struct {
 }
 
 type UpdateRecordParams struct {
-	Name       *string
-	SKU        *string
-	ReplacedAt *time.Time
-	Mileage    *int
+	Name        *string
+	SKU         *string
+	ReplacedAt  *time.Time
+	NextDate    *time.Time
+	Mileage     *int
+	NextMileage *int
 }
