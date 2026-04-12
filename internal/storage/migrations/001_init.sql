@@ -17,8 +17,3 @@ CREATE TABLE IF NOT EXISTS records (
   created_at INTEGER NOT NULL DEFAULT (strftime('%s', 'now')),
   FOREIGN KEY (journal_id) REFERENCES journals(id) ON DELETE CASCADE
 );
-
-CREATE TABLE IF NOT EXISTS schema_migrations (
-  version INTEGER PRIMARY KEY AUTOINCREMENT,
-  applied_at INTEGER NOT NULL DEFAULT (strftime('%s', 'now'))
-)
