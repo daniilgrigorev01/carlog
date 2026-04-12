@@ -3,15 +3,15 @@ package storage
 import "time"
 
 type Journal struct {
-	ID                  int
+	ID                  int64
 	Name                string
 	CurrentMileage      int
 	MileageLastUpdateAt time.Time
 }
 
 type Record struct {
-	ID          int
-	JournalID   int
+	ID          int64
+	JournalID   int64
 	Name        string
 	SKU         string
 	ReplacedAt  time.Time
