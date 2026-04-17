@@ -8,7 +8,7 @@ type Storage interface {
 	UpdateJournalMileage(id int64, mileage int) (Journal, error)
 	DeleteJournal(id int64) error
 
-	AddRecord(record Record) (Record, error)
+	AddRecord(params CreateRecordParams) (Record, error)
 	GetRecordByID(id int64) (Record, error)
 	GetAllRecordsByJournalID(journalID int64) ([]Record, error)
 	UpdateRecord(id int64, params UpdateRecordParams) (Record, error)

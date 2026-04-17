@@ -21,6 +21,16 @@ type Record struct {
 	CreatedAt   time.Time
 }
 
+type CreateRecordParams struct {
+	JournalID   int64
+	Name        string
+	SKU         string
+	ReplacedAt  time.Time
+	NextDate    *time.Time
+	Mileage     int
+	NextMileage *int
+}
+
 type UpdateRecordParams struct {
 	Name        *string
 	SKU         *string
